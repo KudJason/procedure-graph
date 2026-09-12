@@ -21,7 +21,7 @@
   "files": ["dist", "data/seed-procedures.ttl", "README.md", "LICENSE"],
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.0.0",
-    "oxigraph": "^0.4.0",
+    "oxigraph": "^0.5.11",
     "zod": "^3.23.0"
   },
   "devDependencies": {

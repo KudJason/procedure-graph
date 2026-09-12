@@ -623,10 +623,10 @@ once@^1.4.0:
   dependencies:
     wrappy "1"
 
-oxigraph@^0.4.0:
-  version "0.4.11"
-  resolved "https://registry.yarnpkg.com/oxigraph/-/oxigraph-0.4.11.tgz#f8e733cc255685b19558465ca6fe87e053e54d71"
-  integrity sha512-Ff0UIuTbyw4vgkLTBNEbqcA8uN7EkLgj6HyzC1eGchub1I3UaQ9gS3ZwQAcQfNy9Iq9Nf+CoVD6+rugi+RVz2w==
+oxigraph@^0.5.11:
+  version "0.5.11"
+  resolved "https://registry.yarnpkg.com/oxigraph/-/oxigraph-0.5.11.tgz#72fd7ee8dc7fedcc817842979eaf26084a3e25ee"
+  integrity sha512-zKdgmp1tsrutGzC1lCCywwZRPpLJKaJnKSDWoY2hIhMiwiCRRXNN1DU7WUyTInBvgPKT8Y5N+RgwTL8qKXpLng==
 
 parseurl@^1.3.3:
   version "1.3.3"
