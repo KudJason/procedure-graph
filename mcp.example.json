@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "procedure-graph": {
+      "command": "/absolute/path/to/procedure-graph/node_modules/.bin/tsx",
+      "args": ["/absolute/path/to/procedure-graph/src/mcp-server.ts"],
+      "env": {
+        "PG_DATA_FILE": "/absolute/path/to/procedure-graph/data/graph.nq"
+      }
+    }
+  }
+}

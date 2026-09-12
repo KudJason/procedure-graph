@@ -1,0 +1,32 @@
+{
+  "name": "procedure-graph",
+  "version": "0.1.0",
+  "private": false,
+  "type": "module",
+  "description": "A self-evolving procedural knowledge graph exposed through MCP",
+  "license": "MIT",
+  "engines": { "node": ">=20" },
+  "repository": { "type": "git", "url": "https://github.com/KudJason/procedure-graph.git" },
+  "bugs": { "url": "https://github.com/KudJason/procedure-graph/issues" },
+  "homepage": "https://github.com/KudJason/procedure-graph",
+  "scripts": {
+    "build": "tsc --noCheck -p tsconfig.build.json",
+    "test": "tsx --test test/*.test.ts",
+    "cli": "tsx src/cli.ts",
+    "mcp": "tsx src/mcp-server.ts",
+    "typecheck:core": "tsc --noEmit --skipLibCheck --strict --target es2022 --module nodenext --moduleResolution nodenext src/ontology.ts src/store.ts src/pathfinder.ts src/evolution.ts src/evolution_loop.ts src/guidance.ts src/evidence.ts src/cli.ts",
+    "audit": "yarn audit --groups dependencies"
+  },
+  "bin": { "procedure-graph": "dist/cli.js", "procedure-graph-mcp": "dist/mcp-server.js" },
+  "files": ["dist", "data/seed-procedures.ttl", "README.md", "LICENSE"],
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "oxigraph": "^0.4.0",
+    "zod": "^3.23.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.6.0"
+  }
+}
